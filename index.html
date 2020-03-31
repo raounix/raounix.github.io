@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
   <link rel="stylesheet" href="/css/custom.css">
+  <link rel="stylesheet" href="css/preloader.css">
   
 
   
@@ -61,7 +62,12 @@
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
 
+  <div id="loading">
+    <img id="loading-image" src="img/preloader.gif" alt="Loading..." />
+  </div>
+
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  
   <div class="container">
 
     
@@ -451,6 +457,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
     <script src="/js/captain.js"></script>
+    <script>
+      $(window).load(function() {
+        $('#loading').hide();
+      });
+    </script>
+    
     
 
     
